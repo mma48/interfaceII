@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2009 University of Washington Licensed under the Apache
+  License, Version 2.0 (the "License"); you may not use this file except in
+  compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
+  Unless required by applicable law or agreed to in writing, software distributed
+  under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES
+  OR CONDITIONS OF ANY KIND, either express or implied. See the License for
+  the specific language governing permissions and limitations under the License.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="0dp"
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp"
+    android:layout_marginTop="0dp"
+    android:orientation="vertical"
+    android:padding="0dp"
+    >
+
+    <TextView
+        android:id="@+id/main_menu_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="1dp"
+        android:paddingTop="6dp"
+        android:text="@string/app_name"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/couleur_text" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="20dp" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+			android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+			android:paddingEnd="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/image9"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@mipmap/icon_remplir"
+                    android:scaleType="fitXY"/>
+
+                <Button
+                    android:id="@+id/enter_data"
+                    android:layout_width="fill_parent"
+                    android:layout_height="75dp"
+                    android:padding="10dp"
+                    android:textSize="21sp"
+                    android:textColorHighlight="@color/couleur_texte_bouton"
+                    android:textColorHint="@color/couleur_texte_bouton"
+                    android:textColorLink="@color/couleur_texte_bouton"
+                    android:background="@color/couleur_text1"
+                    android:text="tototo"
+                    android:textColor="@color/couleur_texte_bouton"
+                    android:layout_marginRight="10dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image6"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@mipmap/icon_editer"
+                    android:scaleType="fitXY"/>
+
+                <Button
+                    android:id="@+id/review_data"
+                    android:layout_width="fill_parent"
+                    android:layout_height="75dp"
+                    android:padding="10dp"
+                    android:textSize="21sp"
+                    android:textColorHighlight="@drawable/black"
+                    android:textColorHint="@drawable/black"
+                    android:textColorLink="@drawable/black"
+                    android:background="@color/couleur_text1"
+                    android:textColor="@color/couleur_texte_bouton"
+                    android:layout_marginRight="10dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="10dp"
+                android:id="@+id/review_spacer" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image10"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@mipmap/icon_envoie"
+                    android:scaleType="fitXY"/>
+
+                <Button
+                    android:id="@+id/send_data"
+                    android:layout_width="fill_parent"
+                    android:layout_height="75dp"
+                    android:padding="10dp"
+                    android:textColorHighlight="@drawable/black"
+                    android:textColorHint="@drawable/black"
+                    android:textColorLink="@drawable/black"
+                    android:background="@color/couleur_text1"
+                    android:textColor="@color/couleur_texte_bouton"
+                    android:textSize="21sp"
+                    android:layout_marginRight="10dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="10dp" />
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image8"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@mipmap/icon_telecharger"
+                    android:scaleType="fitXY"/>
+
+                <Button
+                    android:id="@+id/get_forms"
+                    android:layout_width="fill_parent"
+                    android:layout_height="75dp"
+                    android:padding="10dp"
+                    android:textColorHighlight="@drawable/black"
+                    android:textColorHint="@drawable/black"
+                    android:textColorLink="@drawable/black"
+                    android:background="@color/couleur_text1"
+                    android:textColor="@color/couleur_texte_bouton"
+                    android:textSize="21sp"
+                    android:layout_marginRight="10dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="10dp"
+                android:id="@+id/get_forms_spacer" />
+
+            <Button
+                android:id="@+id/manage_forms"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="21sp"
+                android:textColorHighlight="@drawable/black"
+                android:textColorHint="@drawable/black"
+                android:textColorLink="@drawable/black"
+                android:textColor="@color/couleur_texte_bouton"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
